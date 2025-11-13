@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sustaina Labs | Building Energy & Sustainability Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f4f0;
+      --card: #ffffff;
+      --primary: #124734;
+      --accent: #4caf50;
+      --text: #1f2933;
+      --muted: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 20px;
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-mark {
+      width: 40px; height: 40px;
+      border-radius: 999px;
+      border: 2px solid var(--primary);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      max-width: 960px;
+      margin: 10px auto 32px;
+      padding: 32px 20px 40px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+      gap: 28px;
+    }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+    .hero h1 {
+      font-size: 2.1rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .hero p { margin-bottom: 12px; color: var(--muted); }
+    .pill {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background: #e6f4ea;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .hero-buttons {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+    .hero-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      font-size: 0.9rem;
+    }
+    .hero-card h2 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+    .tag-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eef2f7;
+      color: var(--muted);
+    }
+
+    section {
+      max-width: 960px;
+      margin: 0 auto 32px;
+      padding: 0 20px;
+    }
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 14px 14px 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      font-size: 0.9rem;
+    }
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    .card p { color: var(--muted); margin-bottom: 8px; }
+    .card small { font-size: 0.8rem; color: var(--muted); }
+
+    footer {
+      border-top: 1px solid #e0e0df;
+      padding: 16px 20px 24px;
+      font-size: 0.8rem;
+      text-align: center;
+      color: var(--muted);
+      margin-top: 20px;
+    }
+    a.link {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a.link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">SL</div>
+    <div>
+      <strong>Sustaina Labs</strong><br />
+      <span style="font-size:0.85rem; color: var(--muted);">
+        Building energy & sustainability tools
+      </span>
+    </div>
+  </div>
+  <nav>
+    <a href="#tools">Tools</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="pill">For energy modellers, by an energy modeller</div>
+    <h1>Practical toolkits for building energy & decarbonization work.</h1>
+    <p>
+      Sustaina Labs turns real project experience into reusable
+      templates, workflows, and lightweight tools for building
+      energy modelling, NECB / ASHRAE compliance, and sustainability.
+    </p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" href="https://github.com/sustaina-labs/sustaina-labs-hub" target="_blank">
+        View tools on GitHub
+      </a>
+      <a class="btn btn-ghost" href="#contact">
+        Contact for collaboration
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <h2>What you’ll find here</h2>
+    <p>
+      Curated resources that help you get from blank model to
+      defensible results faster — without guessing default values
+      every time.
+    </p>
+    <ul class="tag-list">
+      <li class="tag">IESVE templates</li>
+      <li class="tag">NECB 2020 helpers</li>
+      <li class="tag">LEED / ZCB docs</li>
+      <li class="tag">LCA calculators</li>
+      <li class="tag">Study notes</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tools">
+  <h2>🧰 Toolkits & Resources</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>IESVE Templates Pack</h3>
+      <p>Apache loads, schedules, and starter templates to speed up new models.</p>
+      <small>Status: drafting v0.1</small>
+    </div>
+    <div class="card">
+      <h3>NECB 2020 Modelling Toolkit</h3>
+      <p>Envelope defaults, schedules, and checklists for Canadian code compliance models.</p>
+      <small>Status: planned</small>
+    </div>
+    <div class="card">
+      <h3>Carbon & LCA Tools</h3>
+      <p>Simple spreadsheet-based embodied carbon calculators and material libraries.</p>
+      <small>Status: planned</small>
+    </div>
+    <div class="card">
+      <h3>Study Notes & Cheatsheets</h3>
+      <p>Condensed notes for LEED AP BD+C, energy modelling, and key standards.</p>
+      <small>Status: in progress</small>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>📈 Future Services</h2>
+  <p style="color: var(--muted); max-width: 700px;">
+    As Sustaina Labs grows, the plan is to offer select services such as:
+  </p>
+  <ul style="margin-top:8px; margin-left:18px; color: var(--muted); font-size:0.9rem;">
+    <li>Support for IESVE / NECB model setup and QA</li>
+    <li>Template customization for specific portfolios or clients</li>
+    <li>Training sessions on energy modelling workflows</li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>👩‍💻 About Juhi</h2>
+  <p style="max-width: 720px; color: var(--muted); font-size:0.92rem;">
+    Sustaina Labs is created by <strong>Juhi Bhowal</strong>, an energy modeller and sustainability
+    specialist based in Toronto, Canada. After working on projects across the UK, India,
+    and Canada, she is building a focused library of tools that reflect how energy modelling
+    and decarbonization studies are done in real practice.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact</h2>
+  <p style="color: var(--muted); font-size:0.92rem;">
+    For collaboration, feedback, or ideas:
+  </p>
+  <p style="font-size:0.92rem;">
+    💼 LinkedIn: <a class="link" href="YOUR_LINKEDIN_URL" target="_blank">Connect on LinkedIn</a><br />
+    📧 Email: <a class="link" href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> Sustaina Labs · Built on GitHub Pages
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
